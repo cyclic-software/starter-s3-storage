@@ -26,6 +26,7 @@ app.post("/imageUpload", async (req, res) => {
     Bucket: "cyclic-nice-ruby-sea-urchin-garb-eu-west-1",
     Key: "test.jpg", // File name you want to save as  in S3
     Body: fileContent,
+      acl: 'public-read'
   };
 
   // Uploading files to the bucket
